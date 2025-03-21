@@ -59,4 +59,18 @@ a {
 a.dark-mode{
     color: var (--dm_color);
 }
-
+:root ::-webkit-scrollbar {
+    width: 1.5px;
+    height: 10px;
+    background-color: #cccccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+:root ::-webkit-scrollbar-thumb {
+    background-color: #ff0000;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+:root ::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(255, 0, 0, .75);
+} 
