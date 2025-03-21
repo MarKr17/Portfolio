@@ -5,7 +5,53 @@
         "description": "Very fun very import very big project bringing busines value big biznez people things",
         "short description": "fun project using technology",
         "categories": "data analytics",
-        "tags": "Python"
+        "tags": "Python",
+        "image": "/assets/projects/Project_image.png"
+    },
+    "Project2":{
+        "name": "Project2",
+        "id": "2",
+        "description": "Very fun very import very big project bringing busines value big biznez people things",
+        "short description": "fun project using technology",
+        "categories": "machine learning",
+        "tags": ["Python", "Tensorflow"],
+        "image": "/assets/projects/Project_image.png"
+    },
+    "Project3":{
+        "name": "Project3",
+        "id": "3",
+        "description": "Very fun very import very big project bringing busines value big biznez people things",
+        "short description": "fun project using technology",
+        "categories": "bioinformatics",
+        "tags": "R",
+        "image": "/assets/projects/Project_image.png"
+    },
+    "Project4":{
+        "name": "Project4",
+        "id": "4",
+        "description": "Very fun very import very big project bringing busines value big biznez people things",
+        "short description": "fun project using technology",
+        "categories": "machine learning",
+        "tags": ["Python", "Tensorflow"],
+        "image": "/assets/projects/Project_image.png"
+    },
+    "Project5":{
+        "name": "Project5",
+        "id": "5",
+        "description": "Very fun very import very big project bringing busines value big biznez people things",
+        "short description": "fun project using technology",
+        "categories": "data analytics",
+        "tags": "Python",
+        "image": "/assets/projects/Project_image.png"
+    },
+    "Project6":{
+        "name": "Project6",
+        "id": "6",
+        "description": "Very fun very import very big project bringing busines value big biznez people things",
+        "short description": "fun project using technology",
+        "categories": "bioinformatics",
+        "tags": "R",
+        "image": "/assets/projects/Project_image.png"
     }
 
 }

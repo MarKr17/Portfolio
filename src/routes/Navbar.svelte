@@ -1,6 +1,5 @@
 <script>
     let showMenu = false;
-  
     function toggleNavbar() {
       showMenu = !showMenu;
     }
@@ -36,7 +35,7 @@
             : 'hidden'}"
         >
           <a class="text-gray-800 hover:text-blue-400" href="{base}/">Home</a>
-          <a class="text-gray-800 hover:text-blue-400" href="{base}/Projects">Blogs</a>
+          <a class="text-gray-800 hover:text-blue-400" href="{base}/Projects">Projects</a>
           <button on:click={toggle}>Toggle mode</button>
         </div>
       </nav>

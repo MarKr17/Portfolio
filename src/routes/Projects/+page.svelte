@@ -3,3 +3,4 @@
 </script>
 <h1>This is a project page</h1>
 <p> {json.Project1.description} </p>
+<img src={json.Project1.image} alt = "Project 1"/>
