@@ -20,7 +20,7 @@
     <CategoriesButtons {options} legend='' bind:userSelected={Value}/>
 
     </div>
+    <p> {json.Project1.description} </p>
+<img class="h-auto max-w-lg rounded-xl" src={json.Project1.image} alt = "Project 1"/>
 </div>
 
-<p> {json.Project1.description} </p>
-<img class="h-auto max-w-lg rounded-xl" src={json.Project1.image} alt = "Project 1"/>
