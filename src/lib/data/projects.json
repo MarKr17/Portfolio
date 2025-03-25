@@ -4,7 +4,7 @@
         "id": "1",
         "description": "Very fun very import very big project bringing busines value big biznez people things",
         "short description": "fun project using technology",
-        "categories": "data analytics",
+        "categories": "data-analytics",
         "tags": "Python",
         "image": "/assets/projects/Project_image.png"
     },
@@ -13,7 +13,7 @@
         "id": "2",
         "description": "Very fun very import very big project bringing busines value big biznez people things",
         "short description": "fun project using technology",
-        "categories": "machine learning",
+        "categories": "machine-learning",
         "tags": ["Python", "Tensorflow"],
         "image": "/assets/projects/Project_image.png"
     },
@@ -31,7 +31,7 @@
         "id": "4",
         "description": "Very fun very import very big project bringing busines value big biznez people things",
         "short description": "fun project using technology",
-        "categories": "machine learning",
+        "categories": "machine-learning",
         "tags": ["Python", "Tensorflow"],
         "image": "/assets/projects/Project_image.png"
     },
@@ -40,7 +40,7 @@
         "id": "5",
         "description": "Very fun very import very big project bringing busines value big biznez people things",
         "short description": "fun project using technology",
-        "categories": "data analytics",
+        "categories": "data-analytics",
         "tags": "Python",
         "image": "/assets/projects/Project_image.png"
     },
