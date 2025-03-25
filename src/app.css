@@ -16,7 +16,7 @@ body{
     background-color: var(--lm_background);
     color: var(--lm_accent);
     transition: background-color 0.3s;
-    font-family: "Helvetica"
+    font-family: "Overpass", sans-serif;
 }
 body.dark-mode{
     background-color: var(--dm_background);
@@ -24,15 +24,23 @@ body.dark-mode{
 }
 h1{
     font-family: 'Bungee Shade', serif;
+    background: -webkit-linear-gradient(var(--lm_primary), var(--lm_secondary));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-weight: 400;
     font-size: 6vw;
-    color: var(--lm_color);
+    color: var(--lm_primary);
 }
 h1.dark-mode{
     color: var(--dm_color);
 }
 h2{
     font-family: 'Bungee Shade', serif;
+    background: -webkit-linear-gradient(var(--lm_primary), var(--lm_secondary));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-weight: 400;
     font-size: 4vw;
     color: var(--lm_color);
@@ -66,4 +74,16 @@ p {
 }
 p.dark-mode{
     color: var(--dm_color);
+}
+strong {
+    color: var(--lm_secondary);
+}
+strong.dark-mode{
+    color: var(--dm_secondary);
+}
+highlight {
+    background: linear-gradient(120deg, #e4a0a1 0%, #e4a0a1 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 40%;
+    background-position: 0 90%;
 }

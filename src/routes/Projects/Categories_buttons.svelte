@@ -24,7 +24,7 @@
         <div class="legend" 
 						 id={`label-${uniqueID}`}>{legend}
 				</div>
-	<div class='options'>
+	<div class='options gap-10'>
 		 {#each options as { value, label } (value)}
 	<div class='option'>
 		      <input
@@ -44,14 +44,9 @@
 
   
   <style>
-		:root {
-		--lm-accent-color: #70a47f;
-        --dm-accent-color: #5b8f6a;
-		--gray: #ccc;
-    }
+    @import "../../app.css";
     .group-container {
-      border-radius: 2px;
-      border: 1px solid var(--gray-darker);
+      color: var(--lm-color);
       display: flex;
       flex-direction: row;
     }
@@ -84,52 +79,54 @@
 		
 		.options {
 			display: flex;
+      color: var(--lm-color);
+      font-weight: normal;
+      font-size: 1.5rem;
 		}
 		
     
 
     .option + .option > label {
-        border-left-width: 0;
-    }
-    .option:first-of-type > label {
-        border-radius: 6px 0 0 6px;
-    }
-    .option:last-of-type > label {
-        border-radius: 0 6px 6px 0;
+        color: var(--lm_color)
     }
     .option > label{
     padding: 0.6em 1em;
     line-height: 1.3em;
+    font-family: "Ultra", serif;
+    font-size: 1.5rem;
     appearance: none;
     background: none;
-    font-weight: 600;
-    font-size: 0.9em;
-    color: var(--lm-accent-color);
-    border: 1px solid var(--lm-accent-color);
-    border-radius: 0;
+    color: var(--lm_color);
+    border-radius: 6px;
     outline: none;
     cursor: pointer;
 }
 .option > label.dark-mode{
-    color: var(--dm_accent);
-    border: 1px solid var(--dm_accent);
+    color: var(--dm_color);
+    border: 1px solid var(--dm_secondary);
+}
+.option:hover>label{
+    background: linear-gradient(120deg, rgba(171, 159, 214, 0.5) 0%, rgba(219, 119, 112, 0.5) 100%);
+    background-repeat: no-repeat;
+    background-size: 80% 40%;
+    background-position: 25% 90%;
+    background-blend-mode: lighten;
 }
 input[type="checkbox"]:checked + label {
-    background: var(--lm_accent);
-    color: var(--lm_background)
+  background: linear-gradient(120deg, rgba(171, 159, 214, 0.5) 0%, rgba(219, 119, 112, 0.5) 100%);
+    background-repeat: no-repeat;
+    background-size: 80% 40%;
+    background-position: 25% 90%;
+    background-blend-mode: lighten;
 }
 input.dark-mode[type="checkbox"]:checked + label {
-    background: var(--dm_accent);
-    color: var(--dm_background)
+  background: linear-gradient(120deg, rgba(171, 159, 214, 0.5) 0%, rgba(219, 119, 112, 0.5) 100%);
+    background-repeat: no-repeat;
+    background-size: 80% 40%;
+    background-position: 25% 90%;
+    background-blend-mode: lighten;
 }
 
-
-input[type="checkbox"]:focus + label {
-    box-shadow: 0 0px 8px var(--lm_accent);
-}
-input.dark-mode[type="checkbox"]:focus + label {
-    box-shadow: 0 0px 8px var(--dm_accent);
-}
 
 input[type="checkbox"]:disabled + label {
   color: darken(var(--gray), 10);
