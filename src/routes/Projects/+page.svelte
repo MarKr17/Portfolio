@@ -1,5 +1,5 @@
 <script>
-    import projects from '$lib/data/projects.json'
+    import projects from '$lib/data/projects.json';
     import CategoriesButtons from './Categories_buttons.svelte';
     let Value;
 	
@@ -33,19 +33,16 @@
 <div class="flex justify-center pb-10">
     <CategoriesButtons {options} legend='' bind:userSelected={Value}/>
 </div>
-<div class="flex flex-col min-w-screen items-center  h-150">
-    <div class="overflow-auto rounded-xl pr-20 pl-10 ">
-    {#each Object.values(filtered_Projects) as project}
-    <div class="flex flex-cols-3 gap-5">
-    <div class="pt-5 pb-5">
-            <img class="h-40 max-w-xs rounded-xl" src={project.image} alt="Project image"/>
-            <div>
-                <strong>{project.name}</strong>
-                <p>{project.description}</p>
-            </div>
-    </div>
-    </div>
+
+<div class="grid grid-cols-2 md:grid-cols-3 gap-4 w-4/5 mx-auto">
+    {#each Object.entries(filtered_Projects) as [id, project]}
+    <div class="card">
+        <img class="h-40 max-w-xs rounded-xl" src={project.image} alt="Project image"/>
+        <div>
+            <h3>{project.name}</h3>
+            <p class="pb-5">{project.description}</p>
+            <a href={project.link} target="_blank" rel="noopener noreferrer">Read more</a>
+        </div>
+</div>
     {/each}
-    <!-- ... -->
-    </div>
 </div>

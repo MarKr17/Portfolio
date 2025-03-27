@@ -46,7 +46,6 @@
   <style>
     @import "../../app.css";
     .group-container {
-      color: var(--lm-color);
       display: flex;
       flex-direction: row;
     }
@@ -79,27 +78,25 @@
 		
 		.options {
 			display: flex;
-      color: var(--lm-color);
       font-weight: normal;
       font-size: 1.5rem;
 		}
 		
-    
-
-    .option + .option > label {
-        color: var(--lm_color)
-    }
     .option > label{
     padding: 0.6em 1em;
     line-height: 1.3em;
-    font-family: "Ultra", serif;
+    font-family: "Alegreya", sans-serif;
+    font-style: "bold";
+    font-weight: 700;
     font-size: 1.5rem;
     appearance: none;
     background: none;
-    color: var(--lm_color);
     border-radius: 6px;
     outline: none;
     cursor: pointer;
+    position: relative;
+    top: 0;
+    transition: top ease 0.5s;
 }
 .option > label.dark-mode{
     color: var(--dm_color);
@@ -108,22 +105,22 @@
 .option:hover>label{
     background: linear-gradient(120deg, rgba(171, 159, 214, 0.5) 0%, rgba(219, 119, 112, 0.5) 100%);
     background-repeat: no-repeat;
-    background-size: 80% 40%;
-    background-position: 25% 90%;
+    background-size: 80% 20%;
+    background-position: 20% 70%;
     background-blend-mode: lighten;
 }
 input[type="checkbox"]:checked + label {
   background: linear-gradient(120deg, rgba(171, 159, 214, 0.5) 0%, rgba(219, 119, 112, 0.5) 100%);
     background-repeat: no-repeat;
-    background-size: 80% 40%;
-    background-position: 25% 90%;
+    background-size: 80% 20%;
+    background-position: 20% 70%;
     background-blend-mode: lighten;
 }
 input.dark-mode[type="checkbox"]:checked + label {
   background: linear-gradient(120deg, rgba(171, 159, 214, 0.5) 0%, rgba(219, 119, 112, 0.5) 100%);
     background-repeat: no-repeat;
-    background-size: 80% 40%;
-    background-position: 25% 90%;
+    background-size: 80% 20%;
+    background-position: 20% 70%;
     background-blend-mode: lighten;
 }
 
@@ -139,7 +136,6 @@ label {
     user-select: none;
     line-height: 1.2em;
     font-weight: 400;
-    color: var(--gray);
     min-width: 100px;
           max-width: 150px;
     text-align: center;
