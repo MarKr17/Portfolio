@@ -3,11 +3,18 @@
         "name": "Blood Vessels",
         "id": "1",
         "short_description": "University project for blood vessel detection from retinal images",
-        "description": "Very fun very import very big project bringing busines value big biznez people things",
         "categories": ["machine-learning", "bioinformatics"],
-        "tags": ["Python", "TensorFlow", "Numpy", "Scikit-learn", "Google Colab"],
+        "tags": ["Python", "TensorFlow", "Numpy", "Scikit-learn", "Google Colab", "OpenCV"],
         "images": ["/assets/projects/Project1/Image_03L.png", "/assets/projects/Project1/Image_05R.png"],
-        "repo": "https://github.com/MarKr17/BloodVessels"
+        "repo": "https://github.com/MarKr17/BloodVessels",
+        "takeaways":[
+            "Developed a deep learning model for blood vessel detection in retinal images using TensorFlow.",
+            "Utilized convolutional neural networks (CNNs) for image segmentation tasks.",
+            "Implemented data augmentation techniques to improve model performance.",
+            "Gained experience in using Google Colab for cloud-based machine learning projects.",
+            "Learned to preprocess and analyze medical imaging data."
+        ],
+        "description": "This project focuses on developing a deep learning-based solution to automatically detect blood vessels in retinal images. The ability to identify blood vessels is crucial for diagnosing various eye diseases, such as diabetic retinopathy, glaucoma, and age-related macular degeneration. By leveraging TensorFlow, an open-source machine learning framework, the project aims to train a convolutional neural network (CNN) to efficiently and accurately segment blood vessels from retinal images. By automating the process of blood vessel detection in retinal images, this project aims to aid in the timely diagnosis of eye diseases and reduce the workload of healthcare professionals."
     },
     "Project2":{
         "name": "Project2",

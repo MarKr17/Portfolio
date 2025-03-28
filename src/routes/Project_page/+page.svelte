@@ -39,15 +39,17 @@
     <div class="flex-1">
         <h3 class="text-2xl font-semibold mb-4">Key Takeaways</h3>
         <ul class="list-disc pl-6">
-            <li>hhhhhh</li>
+            {#each get(Project).takeaways as takeaway}
+            <li>{takeaway}</li>
             <!-- Add more takeaways here as needed -->
+            {/each}
         </ul>
     </div>
 </div>
 
 <!-- GitHub Link Section (aligned right) -->
 <div class="flex justify-end mt-6 px-10 md:px-20">
-    <a href="{get(Project).repo}" target="_blank" class="bg-[var(--lm_secondary)] text-white py-2 px-6 rounded-lg text-xl transition-all duration-200">
+    <a href="{get(Project).repo}" target="_blank" class="bg-[var(--lm_accent)] text-white py-2 px-6 rounded-lg text-xl transition-all duration-200">
         View on GitHub
     </a>
 </div>
