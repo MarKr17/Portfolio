@@ -98,10 +98,7 @@
     top: 0;
     transition: top ease 0.5s;
 }
-.option > label.dark-mode{
-    color: var(--dm_color);
-    border: 1px solid var(--dm_secondary);
-}
+
 .option:hover>label{
     background: linear-gradient(120deg, rgba(171, 159, 214, 0.5) 0%, rgba(219, 119, 112, 0.5) 100%);
     background-repeat: no-repeat;
@@ -110,13 +107,6 @@
     background-blend-mode: lighten;
 }
 input[type="checkbox"]:checked + label {
-  background: linear-gradient(120deg, rgba(171, 159, 214, 0.5) 0%, rgba(219, 119, 112, 0.5) 100%);
-    background-repeat: no-repeat;
-    background-size: 80% 20%;
-    background-position: 20% 70%;
-    background-blend-mode: lighten;
-}
-input.dark-mode[type="checkbox"]:checked + label {
   background: linear-gradient(120deg, rgba(171, 159, 214, 0.5) 0%, rgba(219, 119, 112, 0.5) 100%);
     background-repeat: no-repeat;
     background-size: 80% 20%;

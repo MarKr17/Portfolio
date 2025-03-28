@@ -8,12 +8,6 @@
 
     --lm_secondary_opacity:rgba(171, 159, 214, 0.5);
     --lm_primary_opacity:rgba(93, 187, 151, 0.5);
-    
-    --dm_color: #def7ea;
-    --dm_background: #050a08;
-    --dm_primary: #44a27e;
-    --dm_secondary: #352960;
-    --dm_accent: #8f2b24;
 
     --grey: #5a5a5a;
 }
@@ -25,10 +19,7 @@ body{
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-body.dark-mode{
-    background-color: var(--dm_background);
-    color: var(--dm_color);
-}
+
 h1{
     font-family: 'Bungee Shade', serif;
     background: -webkit-linear-gradient(var(--lm_secondary), var(--lm_accent));
@@ -39,9 +30,6 @@ h1{
     font-size: 6vw;
     color: var(--lm_primary);
 }
-h1.dark-mode{
-    color: var(--dm_color);
-}
 h2{
     font-family: "Alegreya", serif;
     background-clip: text;
@@ -49,10 +37,6 @@ h2{
     font-style: black;
     font-size: 4vw;
     color: var(--lm_color);
-}
-h2.dark-mode{
-    color: var(--dm_color);
-    
 }
 h3{
     font-family: 'Alegreya-Sans', sans-serif;
@@ -69,10 +53,6 @@ button {
     padding: 0.5rem;
     text-transform: uppercase;
     }
-body.dark-mode button { 
-    background-color: var(--dm_primary);
-    color: var(--dm_background);
-    }
 ul#menu li {
     display:inline;
 }
@@ -87,20 +67,11 @@ a {
 a:hover{
     top: -5px;
 }
-a.dark-mode{
-    color: var (--dm_color);
-}
 p {
     color: var(--lm_color);
 }
-p.dark-mode{
-    color: var(--dm_color);
-}
 strong {
     color: var(--lm_secondary);
-}
-strong.dark-mode{
-    color: var(--dm_secondary);
 }
 highlight {
     background: linear-gradient(120deg, #e4a0a1 0%, #e4a0a1 100%);

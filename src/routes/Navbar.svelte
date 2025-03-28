@@ -3,9 +3,7 @@
     function toggleNavbar() {
       showMenu = !showMenu;
     }
-    function toggle() {
-    	window.document.body.classList.toggle('dark-mode')
-	}
+    
     import { base } from '$app/paths';
   </script>
   
@@ -36,7 +34,6 @@
         >
           <a class="text-gray-800 hover:text-blue-400" href="{base}/">Home</a>
           <a class="text-gray-800 hover:text-blue-400" href="{base}/Projects">Projects</a>
-          <button on:click={toggle}>Toggle mode</button>
         </div>
       </nav>
     </div>
