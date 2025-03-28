@@ -35,7 +35,7 @@
 <div class="grid grid-cols-2 md:grid-cols-3 gap-4 w-4/5 mx-auto">
     {#each Object.entries(filtered_Projects) as [id, project]}
     <div class="card">
-        <img class="h-40 max-w-xs rounded-xl" src={project.image} alt="Project image"/>
+        <img class="h-40 max-w-xs rounded-xl" src="{base}{project.image}" alt="Project"/>
         <div>
             <h3>{project.name}</h3>
             <p class="pb-5">{project.description}</p>
