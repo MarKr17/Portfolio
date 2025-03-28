@@ -5,6 +5,7 @@
         "short_description": "University project for blood vessel detection from retinal images",
         "categories": ["machine-learning", "bioinformatics"],
         "tags": ["Python", "TensorFlow", "Numpy", "Scikit-learn", "Google Colab", "OpenCV"],
+        "title_image":"/assets/projects/Project1/Image_03L.png",
         "images": ["/assets/projects/Project1/Image_03L.png", "/assets/projects/Project1/Image_05R.png"],
         "repo": "https://github.com/MarKr17/BloodVessels",
         "takeaways":[
@@ -17,13 +18,22 @@
         "description": "This project focuses on developing a deep learning-based solution to automatically detect blood vessels in retinal images. The ability to identify blood vessels is crucial for diagnosing various eye diseases, such as diabetic retinopathy, glaucoma, and age-related macular degeneration. By leveraging TensorFlow, an open-source machine learning framework, the project aims to train a convolutional neural network (CNN) to efficiently and accurately segment blood vessels from retinal images. By automating the process of blood vessel detection in retinal images, this project aims to aid in the timely diagnosis of eye diseases and reduce the workload of healthcare professionals."
     },
     "Project2":{
-        "name": "Project2",
+        "name": "Multiple Sclerosis and EBV",
         "id": "2",
-        "description": "Very fun very import very big project bringing busines value big biznez people things",
-        "short_description": "fun project using technology",
-        "categories": "machine-learning",
-        "tags": ["Python", "Tensorflow"],
-        "images": ["/assets/projects/Project_image.png"]
+        "short_description": "Multi agent model of demyelination in multiple sclerosis using Mesa library",
+        "categories": "bioinformatics",
+        "tags": ["Python", "MESA", "Numpy", "Pygame", "Pandas", "Seaborn", "Matplotlib"],
+        "title_image": "/assets/projects/Project2/title_image.jpg",
+        "images": ["/assets/projects/Project2/model.gif"],
+        "repo": "https://github.com/MarKr17/Praca-magisterska/tree/main",
+        "takeaways":[
+            "Developed a multi-agent simulation model to study the relationship between Epstein-Barr Virus (EBV) infection and Multiple Sclerosis (MS).",
+            "Utilized the MESA library for agent-based modeling and simulation.",
+            "Tested hypotheses related to MS development, including molecular mimicry, epitope spreading, and bystander activation.",
+            "Analyzed simulation data using Pandas and visualized results with Seaborn and Matplotlib.",
+            "Gained experience in using Pygame for visualizing model dynamics."
+        ],
+        "description": "This project focuses on creating a multi-agent simulation model to investigate the relationship between Epstein-Barr Virus (EBV) infection and the onset of Multiple Sclerosis (MS). Using agent-based modeling, the project aims to test three key hypotheses related to MS development: molecular mimicry, epitope spreading, and bystander activation. The model simulates immune system interactions and demyelination processes, providing insights into how EBV may trigger MS. The project also includes visualizing the model dynamics using the Pygame library and analyzing the collected data with various plots."
     },
     "Project3":{
         "name": "Project3",
@@ -32,6 +42,7 @@
         "short_description": "fun project using technology",
         "categories": "bioinformatics",
         "tags": "R",
+        "title_image":"/assets/projects/Project_image.png",
         "images": ["/assets/projects/Project_image.png"]
     },
     "Project4":{
@@ -41,6 +52,7 @@
         "short_description": "fun project using technology",
         "categories": "machine-learning",
         "tags": ["Python", "Tensorflow"],
+        "title_image":"/assets/projects/Project_image.png",
         "images": ["/assets/projects/Project_image.png"]
     },
     "Project5":{
@@ -50,6 +62,7 @@
         "short_description": "fun project using technology",
         "categories": "data-analytics",
         "tags": "Python",
+        "title_image":"/assets/projects/Project_image.png",
         "images": ["/assets/projects/Project_image.png"]
     },
     "Project6":{
@@ -59,6 +72,7 @@
         "short_description": "fun project using technology",
         "categories": "bioinformatics",
         "tags": "R",
+        "title_image":"/assets/projects/Project_image.png",
         "images": ["/assets/projects/Project_image.png"]
     }
 

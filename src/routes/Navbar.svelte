@@ -10,7 +10,7 @@
   <div>
     <div>
       <nav
-        class="container px-6 py-8 mx-auto md:flex md:justify-between md:items-center"
+        class="container px-6 py-0 pt-5 pb-0 mx-auto md:flex md:justify-between md:items-center"
       >
         <div class="flex items-center justify-between">
           <!-- Mobile menu button -->

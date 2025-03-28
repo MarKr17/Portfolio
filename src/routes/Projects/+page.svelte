@@ -37,7 +37,7 @@
     {#each Object.entries(filtered_Projects) as [id, project]}
         <div class="card border rounded-lg shadow-md overflow-hidden relative flex flex-col p-4">
             <!-- Project Image -->
-            <img class="h-40 max-w-full rounded-xl object-cover mb-4" src="{base}{project.images[0]}" alt="{project.name}"/>
+            <img class="h-40 max-w-full rounded-xl object-cover mb-4" src="{base}{project.title_image}" alt="{project.name}"/>
 
             <!-- Project Title -->
             <h3 class="text-lg font-semibold mb-2">{project.name}</h3>
