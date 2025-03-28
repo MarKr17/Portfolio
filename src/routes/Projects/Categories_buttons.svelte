@@ -5,7 +5,7 @@
     import '../../app.css'
     export let options;
     export let legend;
-    export let userSelected = options[0].value;
+    export let userSelected = [];
 		export let fontSize = 16;
 		export let flexDirection = 'column'
 
@@ -103,7 +103,7 @@
     background: linear-gradient(120deg, rgba(171, 159, 214, 0.5) 0%, rgba(219, 119, 112, 0.5) 100%);
     background-repeat: no-repeat;
     background-size: 80% 20%;
-    background-position: 20% 70%;
+    background-position: 30% 70%;
     background-blend-mode: lighten;
 }
 input[type="checkbox"]:checked + label {

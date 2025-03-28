@@ -9,6 +9,8 @@
     --lm_secondary_opacity:rgba(171, 159, 214, 0.5);
     --lm_primary_opacity:rgba(93, 187, 151, 0.5);
 
+    --white: #ffffff;
+
     --grey: #5a5a5a;
 }
 body{
@@ -59,12 +61,14 @@ ul#menu li {
     display:inline;
 }
 a {
-    color: var(--lm_accent);
     padding: 0.5rem;
     position: relative;
     top: 0;
     transition: top ease 0.5s;
 
+}
+a.link{
+    color: var(--lm_accent)
 }
 a:hover{
     top: -5px;
@@ -90,7 +94,6 @@ div.card{
     box-shadow: 0 0 5px #0820133d;
 
     margin: 1rem;
-    position: relative;
     top: 0;
     transition: top ease 0.5s;
 
@@ -98,5 +101,19 @@ div.card{
 .card:hover{
     box-shadow: 0 0 10px var(--lm_secondary);
     border-color: var(--lm_secondary);
-    top: -10px;
+    
+    transform: scale(1.05);
+    transition: transform 0.3s;
+    
+}
+.tag {
+    background-color: var(--lm_primary); /* Use the defined variable */
+    color: white;
+    font-size: 0.7rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 9999px;
+  }
+.tag.bigger{
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
 }

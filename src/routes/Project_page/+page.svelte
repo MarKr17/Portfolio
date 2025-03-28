@@ -3,26 +3,51 @@
     import {base} from '$app/paths';
     import {Project} from '../../store.js';
 </script>
-<div class="flex flex-col min-w-screen justify-center items-center content-between gap-10">
+<div class="flex flex-col items-center gap-10 py-20">
+    <!-- Project Title -->
     <div>
-        <h2>{get(Project).name}</h2>
+        <h2 class="text-3xl font-semibold">{get(Project).name}</h2>
     </div>
-</div>
-<div class="flex gap-10 p-20">
-    <div class="">
-        {#each get(Project).images as image}
-        <img class="w-150 rounded-xl pb-10" src="{base}{image}" alt="My avatar"/>
+
+    <!-- Tags Section -->
+    <div class="flex flex-wrap gap-2 px-10 md:px-20 mt-4">
+        {#each get(Project).tags as tag}
+            <span class="tag bigger">
+                {tag}
+            </span>
         {/each}
     </div>
-    <div class="">
-        <h3>Description</h3>
-        <p>{get(Project).description}</p>
-    </div>
-    <div class="">
-        <h3>Key takeways</h3>
-        <ul>
-            <li>hhhhhh</li>
-        </ul>
+</div>
 
+<div class="flex flex-col md:flex-row gap-10 px-10 md:px-20">
+    <!-- Images Section -->
+    <div class="flex-1">
+        <div>
+        {#each get(Project).images as image}
+            <img class="w-full max-w-md rounded-xl mb-10 object-cover center" src="{base}{image}" alt="Project Image"/>
+        {/each}
+        </div>
     </div>
+
+    <!-- Description Section -->
+    <div class="flex-1">
+        <h3 class="text-2xl font-semibold mb-4">Description</h3>
+        <p class="text-gray-700">{get(Project).description}</p>
+    </div>
+
+    <!-- Key Takeaways Section -->
+    <div class="flex-1">
+        <h3 class="text-2xl font-semibold mb-4">Key Takeaways</h3>
+        <ul class="list-disc pl-6">
+            <li>hhhhhh</li>
+            <!-- Add more takeaways here as needed -->
+        </ul>
+    </div>
+</div>
+
+<!-- GitHub Link Section (aligned right) -->
+<div class="flex justify-end mt-6 px-10 md:px-20">
+    <a href="{get(Project).repo}" target="_blank" class="bg-[var(--lm_secondary)] text-white py-2 px-6 rounded-lg text-xl transition-all duration-200">
+        View on GitHub
+    </a>
 </div>

@@ -1,6 +1,7 @@
 <script>
     import projects from '$lib/data/projects.json';
     import CategoriesButtons from './Categories_buttons.svelte';
+    import "../../app.css";
     import { base } from '$app/paths';
     import { Project } from '../../store';
     let Value;
@@ -19,9 +20,9 @@
     $: filtered_Projects = Object.fromEntries(
         Object.entries(projects).filter(([id, project]) =>{
         if (Value === undefined || Value.length === 0) {
-            return project;
+            return true;
         }
-       return project.categories.includes(Value);
+        return Value.every(val => project.categories.includes(val));
     }));
     
 </script>
@@ -34,13 +35,25 @@
 
 <div class="grid grid-cols-2 md:grid-cols-3 gap-4 w-4/5 mx-auto">
     {#each Object.entries(filtered_Projects) as [id, project]}
-    <div class="card">
-        <img class="h-40 max-w-xs rounded-xl" src="{base}{project.images[0]}" alt="Project"/>
-        <div>
-            <h3>{project.name}</h3>
-            <p class="pb-5">{project.short_description}</p>
-            <a on:click={() => Project.set(project)} href="{base}/Project_page">Read more</a>
+        <div class="card border rounded-lg shadow-md overflow-hidden relative flex flex-col p-4">
+            <!-- Project Image -->
+            <img class="h-40 max-w-full rounded-xl object-cover mb-4" src="{base}{project.images[0]}" alt="{project.name}"/>
+
+            <!-- Project Title -->
+            <h3 class="text-lg font-semibold mb-2">{project.name}</h3>
+
+            <!-- Short Description -->
+            <p class="text-gray-700 mb-4">{project.short_description}</p>
+
+            <!-- Tags -->
+            <div class="flex flex-wrap gap-2 mb-4">
+                {#each project.tags as tag}
+                    <span class="tag">{tag}</span>
+                {/each}
+            </div>
+
+            <!-- Read More Button -->
+            <a class="absolute link left-4 bottom-4 text-blue-600 hover:underline" on:click={() => Project.set(project)} href="{base}/Project_page">Read more</a>
         </div>
-</div>
     {/each}
 </div>

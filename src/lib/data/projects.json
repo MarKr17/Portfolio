@@ -1,12 +1,13 @@
 {
     "Project1":{
-        "name": "Project1",
+        "name": "Blood Vessels",
         "id": "1",
+        "short_description": "University project for blood vessel detection from retinal images",
         "description": "Very fun very import very big project bringing busines value big biznez people things",
-        "short_description": "fun project using technology",
-        "categories": "data-analytics",
-        "tags": "Python",
-        "images": ["/assets/projects/Project_image.png", "/assets/projects/Project_image.png"]
+        "categories": ["machine-learning", "bioinformatics"],
+        "tags": ["Python", "TensorFlow", "Numpy", "Scikit-learn", "Google Colab"],
+        "images": ["/assets/projects/Project1/Image_03L.png", "/assets/projects/Project1/Image_05R.png"],
+        "repo": "https://github.com/MarKr17/BloodVessels"
     },
     "Project2":{
         "name": "Project2",
