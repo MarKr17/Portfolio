@@ -1,6 +1,8 @@
 <script>
     import projects from '$lib/data/projects.json';
     import CategoriesButtons from './Categories_buttons.svelte';
+    import { base } from '$app/paths';
+    import { Project } from '../../store';
     let Value;
 	
 		const options = [{
@@ -16,16 +18,12 @@
 
     $: filtered_Projects = Object.fromEntries(
         Object.entries(projects).filter(([id, project]) =>{
-        console.log("---")
-        console.log(projects);
-        console.log(filtered_Projects);
-        console.log(Value);
-        console.log("---")
         if (Value === undefined || Value.length === 0) {
             return project;
         }
        return project.categories.includes(Value);
     }));
+    
 </script>
 <div class="flex flex-col min-w-screen justify-center items-center content-between gap-2 pb-10">
     <h2>Projects</h2>
@@ -41,7 +39,7 @@
         <div>
             <h3>{project.name}</h3>
             <p class="pb-5">{project.description}</p>
-            <a href={project.link} target="_blank" rel="noopener noreferrer">Read more</a>
+            <a on:click={() => Project.set(project)} href="{base}/Project_page">Read more</a>
         </div>
 </div>
     {/each}
