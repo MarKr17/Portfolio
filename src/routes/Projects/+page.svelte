@@ -28,7 +28,7 @@
 <div class="flex flex-col min-w-screen justify-center items-center content-between gap-2 pb-10">
     <h2>Projects</h2>
 </div>
-<div class="flex justify-center pb-10">
+<div class="flex justify-center pb-20">
     <CategoriesButtons {options} legend='' bind:userSelected={Value}/>
 </div>
 
@@ -38,7 +38,7 @@
         <img class="h-40 max-w-xs rounded-xl" src="{base}{project.image}" alt="Project"/>
         <div>
             <h3>{project.name}</h3>
-            <p class="pb-5">{project.description}</p>
+            <p class="pb-5">{project.short_description}</p>
             <a on:click={() => Project.set(project)} href="{base}/Project_page">Read more</a>
         </div>
 </div>
