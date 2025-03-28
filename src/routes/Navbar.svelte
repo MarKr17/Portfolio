@@ -32,8 +32,8 @@
             ? 'flex'
             : 'hidden'}"
         >
-          <a class="text-gray-800 hover:text-blue-400" href="{base}/">Home</a>
-          <a class="text-gray-800 hover:text-blue-400" href="{base}/Projects">Projects</a>
+          <a class="link" href="{base}/">Home</a>
+          <a class="link" href="{base}/Projects">Projects</a>
         </div>
       </nav>
     </div>

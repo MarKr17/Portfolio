@@ -24,15 +24,11 @@ body{
 
 h1{
     font-family: 'Alegreya', serif;
-    background: -webkit-linear-gradient(var(--lm_secondary), var(--lm_accent));
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
     
     font-style: black;
     font-weight: 900;
-    font-size: 6vw;
-    color: var(--lm_primary);
+    font-size: 5vw;
+    color: var(--lm_color);
 }
 h2{
     font-family: "Alegreya", serif;

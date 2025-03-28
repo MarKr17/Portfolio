@@ -50,6 +50,7 @@
 <!-- GitHub Link Section (aligned right) -->
 <div class="flex justify-end mt-6 px-6 md:px-20">
     <a href="{get(Project).repo}" target="_blank" class="bg-[var(--lm_accent)] text-white py-2 px-6 rounded-lg text-xl transition-all duration-200">
-        View on GitHub
+        View on
+        <i class="fab fa-github"></i>
     </a>
 </div>

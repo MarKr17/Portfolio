@@ -53,7 +53,11 @@
             </div>
 
             <!-- Read More Button -->
-            <a class="absolute link left-4 bottom-4 text-blue-600 hover:underline" on:click={() => Project.set(project)} href="{base}/Project_page">Read more</a>
+            <a class="absolute link left-4 bottom-4 text-blue-600 hover:underline" on:click={() => Project.set(project)} href="{base}/Project_page">
+                Read more
+                <i class="fas fa-arrow-right ml-1"></i> <!-- Right Arrow Icon -->
+            </a>
+
         </div>
     {/each}
 </div>
