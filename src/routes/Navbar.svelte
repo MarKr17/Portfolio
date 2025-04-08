@@ -10,7 +10,7 @@
   <div>
     <div>
       <nav
-        class="container px-6 py-0 pt-5 pb-0 mx-auto md:flex md:justify-between md:items-center"
+        class="container px-6 py-0 pt-0 pb-0 mx-auto md:flex md:justify-between md:items-center"
       >
         <div class="flex items-center justify-between">
           <!-- Mobile menu button -->
@@ -33,6 +33,7 @@
             : 'hidden'}"
         >
           <a class="link" href="{base}/">Home</a>
+          <a class="link" href="{base}/About">About</a>
           <a class="link" href="{base}/Projects">Projects</a>
         </div>
       </nav>

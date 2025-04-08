@@ -4,60 +4,79 @@
     import "../../app.css";
     import { base } from '$app/paths';
     import { Project } from '../../store';
+    
     let Value;
-	
-		const options = [{
-		value: 'data-analytics',
-		label: 'Data Analytics',
-	}, {
-		value: 'machine-learning',
-		label: 'Machine Learning',
-	}, {
-		value: 'bioinformatics',
-		label: 'Bioinformatics',
-	}]
-
+   
+    const options = [{
+        value: 'data-analytics',
+        label: 'Data Analytics',
+    }, {
+        value: 'machine-learning',
+        label: 'Machine Learning',
+    }, {
+        value: 'bioinformatics',
+        label: 'Bioinformatics',
+    }]
+    
     $: filtered_Projects = Object.fromEntries(
-        Object.entries(projects).filter(([id, project]) =>{
+        Object.entries(projects).filter(([id, project]) => {
         if (Value === undefined || Value.length === 0) {
             return true;
         }
         return Value.every(val => project.categories.includes(val));
     }));
-    
 </script>
-<div class="flex flex-col min-w-screen justify-center items-center content-between gap-2 pb-10">
-    <h2>Projects</h2>
+
+<!-- Page Header -->
+<div class="flex flex-col items-center py-12 bg-gray-50">
+    <h1 class="text-3xl md:text-4xl font-bold mb-4">Projects</h1>
+    <!-- Categories Section -->
+    <div class="w-full max-w-3xl px-4">
+        <CategoriesButtons {options}  bind:userSelected={Value}/>
+    </div>
 </div>
-<div class="flex justify-center pb-20">
-    <CategoriesButtons {options} legend='' bind:userSelected={Value}/>
+
+<!-- Back Button -->
+<div class="container mx-auto px-4 my-6">
+    <a class="inline-flex items-center text-lg font-medium transition-colors duration-300 secondary" href="{base}/">
+        <i class="fas fa-arrow-left mr-2"></i>
+        <span>Back to Home</span>
+    </a>
 </div>
 
-<div class="grid grid-cols-2 md:grid-cols-3 gap-4 w-4/5 mx-auto">
-    {#each Object.entries(filtered_Projects) as [id, project]}
-        <div class="card border rounded-lg shadow-md overflow-hidden relative flex flex-col p-4">
-            <!-- Project Image -->
-            <img class="h-40 max-w-full rounded-xl object-cover mb-4" src="{base}{project.title_image}" alt="{project.name}"/>
-
-            <!-- Project Title -->
-            <h3 class="text-lg font-semibold mb-2">{project.name}</h3>
-
-            <!-- Short Description -->
-            <p class="text-gray-700 mb-4">{project.short_description}</p>
-
-            <!-- Tags -->
-            <div class="flex flex-wrap gap-2 mb-4">
-                {#each project.tags as tag}
-                    <span class="tag">{tag}</span>
-                {/each}
+<!-- Projects Grid -->
+<div class="container mx-auto px-4 mb-16">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {#each Object.entries(filtered_Projects) as [id, project]}
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col h-full transition-transform duration-300 hover:shadow-xl hover:-translate-y-1">
+                <!-- Project Image -->
+                <div class="h-52 overflow-hidden">
+                    <img class="w-full h-full object-cover" src="{base}{project.title_image}" alt="{project.name}"/>
+                </div>
+                
+                <!-- Content -->
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="text-xl font-bold mb-3">{project.name}</h3>
+                    <p class="text-gray-600 mb-4 flex-grow">{project.short_description}</p>
+                    
+                    <!-- Tags -->
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        {#each project.tags as tag}
+                            <span class="tag secondary">{tag}</span>
+                        {/each}
+                    </div>
+                    
+                    <!-- Read More Button -->
+                    <a 
+                        class="mt-2 inline-flex items-center justify-center py-2 px-4 rounded-lg bg-[var(--lm_primary)] text-white font-medium" 
+                        on:click={() => Project.set(project)} 
+                        href="{base}/Project_page"
+                    >
+                        Read more
+                        <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
             </div>
-
-            <!-- Read More Button -->
-            <a class="absolute link left-4 bottom-4 text-blue-600 hover:underline" on:click={() => Project.set(project)} href="{base}/Project_page">
-                Read more
-                <i class="fas fa-arrow-right ml-1"></i> <!-- Right Arrow Icon -->
-            </a>
-
-        </div>
-    {/each}
+        {/each}
+    </div>
 </div>

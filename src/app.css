@@ -4,6 +4,7 @@
     --lm_background: #f4faf7;
     --lm_primary: #5dbb97;
     --lm_secondary: #ab9fd6;
+    --lm_link: #7d6eb6;
     --lm_accent: #db766f;
 
     --lm_secondary_opacity:rgba(171, 159, 214, 0.5);
@@ -27,7 +28,7 @@ h1{
     
     font-style: black;
     font-weight: 900;
-    font-size: 5vw;
+    font-size: 5em;
     color: var(--lm_color);
 }
 h2{
@@ -35,14 +36,14 @@ h2{
     background-clip: text;
     font-weight: 900;
     font-style: black;
-    font-size: 4vw;
+    font-size: 4em;
     color: var(--lm_color);
 }
 h3{
     font-family: 'Alegreya-Sans', sans-serif;
     font-weight: 500;
     font-style: medium;
-    font-size: 1.5vw;
+    font-size: 1.5em;
     color: var(--lm_color);
 }
 button {
@@ -64,7 +65,7 @@ a {
 
 }
 a.link{
-    color: var(--lm_accent)
+    color: var(--lm_link)
 }
 a:hover{
     top: -5px;
@@ -109,7 +110,22 @@ div.card{
     padding: 0.25rem 0.5rem;
     border-radius: 9999px;
   }
+.tag.secondary{
+    background-color: #ddd6f1; /* Use the defined variable */
+    color: #6b59a7;
+}
 .tag.bigger{
     font-size: 1rem;
     padding: 0.5rem 1rem;
+}
+.tag.bigger2{
+    background-color: var(--lm_secondary); /* Use the defined variable */
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+}
+.secondary{
+    color: var(--lm_link)
+}
+.primary{
+    color: var(--lm_primary)
 }
