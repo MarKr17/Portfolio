@@ -29,9 +29,9 @@
 
 <!-- Page Header -->
 <div class="flex flex-col items-center py-12 bg-gray-50">
-    <h1 class="text-3xl md:text-4xl font-bold mb-4">Projects</h1>
+    <h2 class="mb-4">Projects</h2>
     <!-- Categories Section -->
-    <div class="w-full max-w-3xl px-4">
+    <div class="w-full max-w-3xl px-4 items-center">
         <CategoriesButtons {options}  bind:userSelected={Value}/>
     </div>
 </div>

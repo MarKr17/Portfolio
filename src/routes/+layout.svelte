@@ -25,7 +25,16 @@
     <div>
       <Navbar />
  
-      <div style="position: relative; min-height: 50vh;">
+      <div style="position: relative; min-height: 20vh; 2xl:min-height: 50vh;">
+        {#key currentPath}
+          <div 
+            in:receive={{key: currentPath}}
+            out:send={{key: currentPath}}
+            style="position: absolute; width: 100%;"
+          >
+            {@render children()}
+          </div>
+        {/key}
         {#key currentPath}
           <div 
             in:receive={{key: currentPath}}

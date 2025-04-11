@@ -43,92 +43,84 @@
   </div>
 
   
-  <style>
-    @import "../../app.css";
-    .group-container {
-      display: flex;
-      flex-direction: row;
-    }
-
-
-    .legend {
-      margin-right: 0.5rem;
-      font-weight: bold;
-    }
-
-    
+<style>
+  @import "../../app.css";
   
-    .sr-only {
-      position: absolute;
-      clip: rect(1px, 1px, 1px, 1px);
-      padding: 0;
-      border: 0;
-      height: 1px;
-      width: 1px;
-      overflow: hidden;
-    }
-  
-    input[type="checkbox"] {
-      position: absolute;
-    }
-  
-    input[type="checkbox"] + label {
-      position: relative;
-    }
-		
-		.options {
-			display: flex;
-      font-weight: normal;
-      font-size: 1.5rem;
-		}
-		
-    .option > label{
+  .group-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .legend {
+    margin-right: 0.5rem;
+    font-weight: bold;
+  }
+
+  .sr-only {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0;
+    border: 0;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+  }
+
+  input[type="checkbox"] {
+    position: absolute;
+  }
+
+  input[type="checkbox"] + label {
+    position: relative;
     padding: 0.6em 1em;
     line-height: 1.3em;
-    font-family: "Alegreya", sans-serif;
-    font-style: "bold";
-    font-weight: 700;
-    font-size: 1.5rem;
-    appearance: none;
-    background: none;
+    color: var(--lm_link);
+    font-weight: normal;
+    font-size: 1.1rem;
+    background: var(--lm_bg); 
     border-radius: 6px;
+    border: 2px solid transparent; 
     outline: none;
     cursor: pointer;
-    position: relative;
-    top: 0;
-    transition: top ease 0.5s;
-}
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s, font-weight 0.3s;
+  }
+  /* Hover effect to add some interactivity */
+  .option:hover > label {
+    background-color: var(--lm_primary); 
+    color: white; /* White text on hover */
+  }
 
-.option:hover>label{
-    background: linear-gradient(120deg, rgba(171, 159, 214, 0.5) 0%, rgba(219, 119, 112, 0.5) 100%);
-    background-repeat: no-repeat;
-    background-size: 80% 20%;
-    background-position: 30% 70%;
-    background-blend-mode: lighten;
-}
-input[type="checkbox"]:checked + label {
-  background: linear-gradient(120deg, rgba(171, 159, 214, 0.5) 0%, rgba(219, 119, 112, 0.5) 100%);
-    background-repeat: no-repeat;
-    background-size: 80% 20%;
-    background-position: 20% 70%;
-    background-blend-mode: lighten;
-}
+  /* Style for selected (checked) options */
+  input[type="checkbox"]:checked + label {
+    background-color: var(--lm_primary); /* Green background for selected option */
+    color: white; /* White text when selected */
+    border-color:rgb(78, 156, 126); /* Darker green border */
+    transform: scale(1.05); /* Slightly enlarge the selected label */
+  }
 
+  /* Disabled options */
+  input[type="checkbox"]:disabled + label {
+    background-color: var(--lm_primary); /* Light gray background for disabled options */
+    color: var(--lm_color); /* Gray text */
+    border-color: var(--lm_link); /* Gray border */
+    cursor: not-allowed;
+  }
 
-input[type="checkbox"]:disabled + label {
-  color: darken(var(--gray), 10);
-}
+  .options {
+    display: flex;
+    font-weight: normal;
+    font-size: 1.5rem;
+  }
 
-input[type="checkbox"]:disabled + label {
-  background: var(--gray);
-}
-label {
+  label {
     user-select: none;
     line-height: 1.2em;
     font-weight: 400;
     min-width: 100px;
-          max-width: 150px;
+    max-width: 150px;
     text-align: center;
+    background-color: #4caf50;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
   }
-    
-    </style>
+</style>

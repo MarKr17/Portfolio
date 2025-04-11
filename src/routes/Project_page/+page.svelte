@@ -20,9 +20,9 @@
 </div>
 <!-- "Back" Link Section (aligned to the far right) -->
 <div class="flex w-full justify-start mt-6 px-2 md:px-20">
-    <a class="text-xl secondary transition-all duration-300 flex items-center gap-2" href="{base}/">
+    <a class="text-xl secondary transition-all duration-300 flex items-center gap-2" href="{base}/Projects">
         <i class="secondary fas fa-arrow-left ml-2"></i> <!-- Right Arrow Icon -->
-        Back
+        Back to Projects
     </a>
 </div>
 <!-- Responsive Flex Layout for Images, Description, and Key Takeaways -->

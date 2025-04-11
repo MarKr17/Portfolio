@@ -5,6 +5,7 @@
     --lm_primary: #5dbb97;
     --lm_secondary: #ab9fd6;
     --lm_link: #7d6eb6;
+    --lm_bg: #ddd6f1;
     --lm_accent: #db766f;
 
     --lm_secondary_opacity:rgba(171, 159, 214, 0.5);
@@ -28,8 +29,11 @@ h1{
     
     font-style: black;
     font-weight: 900;
-    font-size: 5em;
+    font-size: 4em;
     color: var(--lm_color);
+}
+h1.xl{
+    font-size: 5em;
 }
 h2{
     font-family: "Alegreya", serif;
@@ -38,6 +42,9 @@ h2{
     font-style: black;
     font-size: 4em;
     color: var(--lm_color);
+}
+h2.xl{
+    font-size: 4em;
 }
 h3{
     font-family: 'Alegreya-Sans', sans-serif;
