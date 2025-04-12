@@ -36,13 +36,13 @@
         "description": "This project focuses on creating a multi-agent simulation model to investigate the relationship between Epstein-Barr Virus (EBV) infection and the onset of Multiple Sclerosis (MS). Using agent-based modeling, the project aims to test three key hypotheses related to MS development: molecular mimicry, epitope spreading, and bystander activation. The model simulates immune system interactions and demyelination processes, providing insights into how EBV may trigger MS. The project also includes visualizing the model dynamics using the Pygame library and analyzing the collected data with various plots."
     },
     "Project3":{
-        "name": "Graph Convolutional Network for MS protein interactions",
+        "name": "GCN for MS protein interactions",
         "id": "3",
-        "short_description": "Graph Convolutional Network to discover novel protein interactions in Multiple Sclerosis using data from the APID database.",
+        "short_description": "Graph Convolutional Network to discover novel protein interactions in Multiple Sclerosis.",
         "categories": ["bioinformatics","machine-learning"],
         "tags": ["Python", "TensorFlow","Numpy", "SciPy","NetworkX", "Scikit-learn", "Cytoscape"],
-        "title_image":"/assets/projects/Project_image.png",
-        "images": ["/assets/projects/Project_image.png"],
+        "title_image":"/assets/projects/Project3/MergedNetwork.png",
+        "images": ["/assets/projects/Project3/MergedNetwork.png"],
         "repo": "https://github.com/MarKr17/GCN-MS",
         "takeaways":[
             "Machine Learning in Biology: Applied GCNs with TensorFlow to uncover novel protein interactions in MS.",
@@ -54,36 +54,5 @@
             "Cross-disciplinary Approach: Combined computational biology, machine learning, and systems biology for MS research."
         ],
         "description": "This project leverages Graph Convolutional Networks (GCNs) to uncover novel protein-protein interactions in Multiple Sclerosis (MS). Using data from the APID (Ariadne Protein Interaction Database), we construct detailed protein interaction networks relevant to MS. GCNs, a powerful machine learning technique, are applied to these networks to reveal hidden relationships and previously overlooked connections between proteins. The primary goal is to identify new interactions that may play a role in MS pathogenesis. By discovering these novel connections, we aim to gain insights into the molecular mechanisms driving the disease. These findings could also highlight potential biomarkers or therapeutic targets for MS. The project combines advanced computational methods with biological data to push forward MS research. Ultimately, the goal is to contribute to new avenues for MS treatment and diagnosis. The results may also serve as a model for using GCNs in other diseases. This innovative approach could pave the way for more targeted and personalized therapies."
-    },
-    "Project4":{
-        "name": "Project4",
-        "id": "4",
-        "description": "Very fun very import very big project bringing busines value big biznez people things",
-        "short_description": "fun project using technology",
-        "categories": "machine-learning",
-        "tags": ["Python", "Tensorflow"],
-        "title_image":"/assets/projects/Project_image.png",
-        "images": ["/assets/projects/Project_image.png"]
-    },
-    "Project5":{
-        "name": "Project5",
-        "id": "5",
-        "description": "Very fun very import very big project bringing busines value big biznez people things",
-        "short_description": "fun project using technology",
-        "categories": "data-analytics",
-        "tags": "Python",
-        "title_image":"/assets/projects/Project_image.png",
-        "images": ["/assets/projects/Project_image.png"]
-    },
-    "Project6":{
-        "name": "Project6",
-        "id": "6",
-        "description": "Very fun very import very big project bringing busines value big biznez people things",
-        "short_description": "fun project using technology",
-        "categories": "bioinformatics",
-        "tags": "R",
-        "title_image":"/assets/projects/Project_image.png",
-        "images": ["/assets/projects/Project_image.png"]
     }
-
 }

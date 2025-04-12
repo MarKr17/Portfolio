@@ -1,12 +1,13 @@
 @import 'tailwindcss';
 :root{
     --lm_color: #173b29;
+    --lm_color_light: #274c39
     --lm_background: #f4faf7;
     --lm_primary: #5dbb97;
     --lm_secondary: #ab9fd6;
     --lm_link: #7d6eb6;
     --lm_bg: #ddd6f1;
-    --lm_accent: #db766f;
+    --lm_accent: #274690;
 
     --lm_secondary_opacity:rgba(171, 159, 214, 0.5);
     --lm_primary_opacity:rgba(93, 187, 151, 0.5);
@@ -29,7 +30,7 @@ h1{
     
     font-style: black;
     font-weight: 900;
-    font-size: 4em;
+    font-size: 5vw;
     color: var(--lm_color);
 }
 h1.xl{
@@ -40,7 +41,7 @@ h2{
     background-clip: text;
     font-weight: 900;
     font-style: black;
-    font-size: 4em;
+    font-size: 4vw;
     color: var(--lm_color);
 }
 h2.xl{
@@ -48,9 +49,23 @@ h2.xl{
 }
 h3{
     font-family: 'Alegreya-Sans', sans-serif;
+    font-weight: 700;
+    font-style: bold;
+    font-size: 1.5vw;
+    color: var(--lm_color);
+}
+h4{
+    font-family: 'Alegreya-Sans', sans-serif;
+    font-weight: 900;
+    font-style: bold;
+    font-size: 1.5vw;
+    color: var(--lm_color);
+}
+h5{
+    font-family: 'Alegreya-Sans', sans-serif;
     font-weight: 500;
-    font-style: medium;
-    font-size: 1.5em;
+    font-style: medum;
+    font-size: 1.5vw;
     color: var(--lm_color);
 }
 button {
@@ -64,21 +79,40 @@ button {
 ul#menu li {
     display:inline;
 }
+ul{
+    color: var(--lm_color_light);
+    font-size: 1.2vw;
+    
+}
+li{
+    color: var(--lm_color_light)
+}
 a {
     padding: 0.5rem;
-    position: relative;
-    top: 0;
-    transition: top ease 0.5s;
-
+    display: inline-block;
+    transition: transform 0.3s ease;
+    font-size:1.3vw;
+}
+a.smaller{
+    font-size: 1vw;
+}
+a:hover {
+    transform: translateY(-5px);
 }
 a.link{
-    color: var(--lm_link)
+    color: var(--lm_accent)
 }
-a:hover{
-    top: -5px;
-}
+
 p {
+    color: var(--lm_color_light);
+    font-size: 1.2vw;
+    font-style: normal;
+    font-weight:50;
+}
+p1{
     color: var(--lm_color);
+    font-size: 1.2vw;
+    line-height: 1.8em;
 }
 strong {
     color: var(--lm_secondary);
@@ -113,26 +147,30 @@ div.card{
 .tag {
     background-color: var(--lm_primary); /* Use the defined variable */
     color: white;
-    font-size: 0.7rem;
+    font-size: 1vw;
     padding: 0.25rem 0.5rem;
     border-radius: 9999px;
   }
 .tag.secondary{
     background-color: #ddd6f1; /* Use the defined variable */
     color: #6b59a7;
+    font-size: 0.8vw
 }
 .tag.bigger{
-    font-size: 1rem;
-    padding: 0.5rem 1rem;
+    font-size: 1vw;
+    padding: 0.4rem 0.8rem;
 }
 .tag.bigger2{
     background-color: var(--lm_secondary); /* Use the defined variable */
     font-size: 1rem;
-    padding: 0.5rem 1rem;
+    padding: 0.4rem 0.8rem;
 }
 .secondary{
     color: var(--lm_link)
 }
 .primary{
     color: var(--lm_primary)
+}
+.accent{
+    color: var(--lm_accent)
 }

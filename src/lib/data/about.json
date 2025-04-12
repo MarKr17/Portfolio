@@ -1,34 +1,29 @@
 {
     "name": "Maria Kroczek",
     "title": "At vero eos et accusamus et",
-    "text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "text":"I’m a bioinformatics graduate with a passion for data-driven innovation and AI. Since completing my master’s in September, I’ve dived deep into neural networks, completing a CNN course and actively participating in Poznań’s AI and data science community. I’m currently developing Poznań AI License, an early-stage startup aimed at helping companies navigate and prepare for compliance with the EU AI Act. My interests span bioinformatics, machine learning, and data analytics — all fueled by a love for uncovering patterns and solving real-world problems through data.",
     "linked_in": "https://www.linkedin.com/in/maria-kroczek-405808208/",
     "github": "https://github.com/MarKr17",
     "contactEmail":"mariakroczek199@gmail.com",
     "programming_skills": [
         "Python",
+        "R",
+        "C#",
         "JavaScript",
         "HTML",
         "CSS",
-        "Java",
         "C++",
-        "React",
-        "Node.js",
         "SQL",
-        "Git"
-    ],
-    "tools": [
-        "Visual Studio Code",
-        "PyCharm",
-        "Eclipse",
-        "Postman",
-        "Figma",
-        "Jupyter Notebook",
+        "Git",
+        "PowerBI",
+        "Excel",
         "Docker",
-        "GitHub",
-        "Slack",
-        "Trello"
+        "Databricks",
+        "Jupyter Notebooks",
+        "PyTorch",
+        "TensorFlow"
     ],
+    
     "languages": [
         {
             "name": "English",
@@ -40,72 +35,47 @@
         }
     ],
     "interests": [
-        "Web Development",
         "Data Science",
         "Machine Learning",
         "Artificial Intelligence",
         "Cloud Computing",
-        "Cybersecurity",
-        "Blockchain",
-        "Internet of Things (IoT)",
-        "Augmented Reality (AR)",
-        "Virtual Reality (VR)"
+        "Blockchain"
     ],
     "education": [
         {
-            "name": "Master of Science in Computer Science",
-            "institution": "University of XYZ",
-            "year": 2022
+            "name": "Master of Science in Bioinformatics",
+            "institution": "Poznań University of Technology",
+            "year": 2024
+
         },
         {
-            "name": "Bachelor of Science in Information Technology",
-            "institution": "University of ABC",
-            "year": 2020
+            "name": "Bachelor of Science in Bioinformatics",
+            "institution": "Poznań University of Technology",
+            "year": 2021
         }
         
     ],
     "certifications":[
         {
-            "name": "AWS Certified Solutions Architect",
-            "institution": "Amazon Web Services",
-            "year": 2023
-        },
-        {
-            "name": "Certified Ethical Hacker (CEH)",
-            "institution": "EC-Council",
-            "year": 2023
-        },
-        {
-            "name": "Google Data Analytics Professional Certificate",
-            "institution": "Google",
-            "year": 2023
+            "name": "Deep Learning for Image processing and Robotics",
+            "institution": "Poznan University of Technology",
+            "year": 2025
         }
     ],
     "recent_activities":[
         {
-            "name": "Completed a project on machine learning",
-            "description": "Developed a machine learning model to predict housing prices using Python and scikit-learn.",
-            "date": "2023-10-01",
-            "link": ""
+            "name": "Poznań AI License",
+            "description": "Developing a startup focused on helping companies navigate and prepare for compliance with the EU AI Act.",
+            "date": "2025-03-23",
+            "link": "https://pail.com.pl/"
         },
         {
-            "name": "Attended a conference on cloud computing",
-            "description":"Developed a machine learning model to predict housing prices using Python and scikit-learn.",
-            "date": "2023-09-15",
-            "link": ""
-        },
-        {
-            "name": "Published a research paper on AI ethics",
-            "description":"Developed a machine learning model to predict housing prices using Python and scikit-learn.",
-            "date": "2023-08-20",
-            "link": ""
-        },
-        {
-            "name": "Participated in a hackathon",
-            "description":"Developed a machine learning model to predict housing prices using Python and scikit-learn.",
-            "date": "2023-07-10",
-            "link": ""
+            "name": "Won Hack of Tomorrow Hackathon in blockchain category",
+            "description": "Developed Poznań AI License project using BSV blockchain",
+            "date": "2025-03-23",
+            "link": "https://www.linkedin.com/posts/tech-of-tomorrow-conference_were-proud-to-announce-the-winners-of-the-activity-7312789259000676353-Bd7A?utm_source=share&utm_medium=member_desktop&rcm=ACoAADTNGEUB80R0ikkwn1inDCPQULD5S3vH_Y8"
         }
+       
     ]
 
 }

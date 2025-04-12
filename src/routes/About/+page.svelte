@@ -4,8 +4,8 @@
 </script>
 <!-- "Scroll Up" Link Section (Centered at the Top) -->
 <div class="absolute top-4 left-1/2 transform -translate-x-1/2">
-    <a href="{base}/" class="text-xl secondary flex items-center">
-        <i class="secondary fas fa-arrow-up mr-2"></i> <!-- Down Arrow Icon -->
+    <a href="{base}/" class="text-xl accent flex items-center">
+        <i class=" fas fa-arrow-up mr-2"></i> <!-- Down Arrow Icon -->
         Back
     </a>
 </div>
@@ -36,6 +36,7 @@
                 {/each}
             </div>
         </div>
+
     </section>
 
     <!-- Certifications & Education Section -->
@@ -50,7 +51,7 @@
                 <div class="mt-4 space-y-6">
                     {#each Object.entries(json.certifications) as [id, cert]}
                         <div class="">
-                            <h4 class="text-xl font-medium">{cert.name}</h4>
+                            <h5 class="">{cert.name}</h5>
                             <p class="">{cert.institution} - {cert.year}</p>
                         </div>
                     {/each}
@@ -63,7 +64,7 @@
                 <div class="mt-4 space-y-6">
                     {#each Object.entries(json.education) as [id, edu]}
                         <div class="">
-                            <h4 class="text-xl font-medium">{edu.name}</h4>
+                            <h5 class="text-xl font-medium">{edu.name}</h5>
                             <p class="">{edu.institution} - Graduated: {edu.year}</p>
                         </div>
                     {/each}
@@ -81,7 +82,7 @@
                     <h3 class="">{activity.name}</h3>
                     <p class="">{activity.date}</p>
                     <p class="">{activity.description}</p>
-                    <a href="{activity.link}" class="link">Learn More</a>
+                    <a href="{activity.link}" target="_blank" class="link">Learn More</a>
                 </div>
             {/each}
         </div>

@@ -77,7 +77,7 @@
     line-height: 1.3em;
     color: var(--lm_link);
     font-weight: normal;
-    font-size: 1.1rem;
+    font-size: 1.2vw;
     background: var(--lm_bg); 
     border-radius: 6px;
     border: 2px solid transparent; 
@@ -87,15 +87,14 @@
   }
   /* Hover effect to add some interactivity */
   .option:hover > label {
-    background-color: var(--lm_primary); 
-    color: white; /* White text on hover */
+    border-color: var(--lm_accent);
+    color: var(--lm_accent);
   }
 
   /* Style for selected (checked) options */
   input[type="checkbox"]:checked + label {
-    background-color: var(--lm_primary); /* Green background for selected option */
+    background-color: var(--lm_accent); /* Green background for selected option */
     color: white; /* White text when selected */
-    border-color:rgb(78, 156, 126); /* Darker green border */
     transform: scale(1.05); /* Slightly enlarge the selected label */
   }
 
@@ -120,7 +119,6 @@
     min-width: 100px;
     max-width: 150px;
     text-align: center;
-    background-color: #4caf50;
     transition: background-color 0.3s, color 0.3s, transform 0.3s;
   }
 </style>
