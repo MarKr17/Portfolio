@@ -27,7 +27,7 @@
     "languages": [
         {
             "name": "English",
-            "level": "profesional"
+            "level": "professional"
         },
         {
             "name": "Polish",
@@ -39,7 +39,10 @@
         "Machine Learning",
         "Artificial Intelligence",
         "Cloud Computing",
-        "Blockchain"
+        "Blockchain",
+        "Bioinformatics",
+        "Neuroscience",
+        "AI Ethics"
     ],
     "education": [
         {

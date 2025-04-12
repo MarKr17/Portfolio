@@ -9,14 +9,14 @@
         Back
     </a>
 </div>
-<main class="bg-gray-50 p-8 font-sans leading-relaxed">
+<main class="bg-gray-50 p-2 md:pt-2 2xl:p-8 font-sans leading-relaxed">
 
     <!-- Skills & Interests Section -->
-    <section class="mt-16 max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
+    <section class="mt-16 max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-2 2xl:gap-10">
         <!-- Skills Section -->
         <div>
             <h2 class="text-center mb-6">Skills</h2>
-            <div class="flex flex-wrap justify-center gap-6">
+            <div class="flex flex-wrap justify-center gap-3 2xl:gap-6">
                 {#each Object.entries(json.programming_skills) as [id, skill]}
                     <div class="tag bigger">
                         {skill}
@@ -28,7 +28,7 @@
         <!-- Interests Section -->
         <div>
             <h2 class="text-center mb-6">Interests</h2>
-            <div class="flex flex-wrap justify-center gap-6">
+            <div class="flex flex-wrap justify-center gap-3 2xl:gap-6">
                 {#each Object.entries(json.interests) as [id, interest]}
                     <div class="tag bigger2">
                         {interest}

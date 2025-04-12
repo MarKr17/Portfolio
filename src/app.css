@@ -82,7 +82,7 @@ ul#menu li {
 ul{
     color: var(--lm_color_light);
     font-size: 1.2vw;
-    
+
 }
 li{
     color: var(--lm_color_light)
@@ -162,7 +162,7 @@ div.card{
 }
 .tag.bigger2{
     background-color: var(--lm_secondary); /* Use the defined variable */
-    font-size: 1rem;
+    font-size: 1vw;
     padding: 0.4rem 0.8rem;
 }
 .secondary{

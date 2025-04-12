@@ -5,13 +5,7 @@
 	import { base } from '$app/paths';
 </script>
 
-<div class="flex flex-col items-center justify-between min-h-screen py-2 px-4 relative overflow-hidden">
-	<!-- Avatar Section -->
-	<div class="w-10 sm:w-14 md:w-18 xl:w-22 2xl:w-26 mt-4">
-		<img class="rounded-full w-full h-full " src={base + "/assets/Avatar.png"} alt="My avatar" />
-		<!--object-cover shadow-lg-->
-	</div>
-
+<div class="flex flex-col items-center justify-between max-h-screen min-h-[90vh] py-2 px-4 relative overflow-hidden">
 	<!-- Decorative Wider Wiggle Shape -->
 	<div class="absolute inset-0 pointer-events-none -z-10 opacity-15">
 		<svg viewBox="0 0 1000 500" preserveAspectRatio="xMidYMid slice" class="w-full h-full">
@@ -37,19 +31,19 @@
 	</div>
 
 	<!-- Middle Content Section -->
-	<div class="flex flex-col items-center max-h-[50vh] overflow-y-auto no-scrollbar">
+	<div class="flex flex-col items-center  mt-10 md:mt-24 2xl:mt-24">
 		<!-- Name Section -->
 		<div>
 			<h1 class="2xl:2xl">{json.name}</h1>
 		</div>
 
 		<!-- Bio/Description Section -->
-		<div class="w-full sm:w-3/4 lg:w-2/3 text-center mt-2">
+		<div class="w-full sm:w-3/4 lg:w-2/3 text-center mt-5">
 			<p1 class="sm:text-base ">{json.text}</p1>
 		</div>
 
 		<!-- Social Links Section -->
-		<div class="flex gap-4 mt-3">
+		<div class="flex gap-4 mt-10">
 			<a href={json.github} target="_blank" class="text-base md:text-lg primary flex items-center gap-1">
 				<i class="fab fa-github"></i> GitHub
 			</a>
@@ -60,7 +54,7 @@
 	</div>
 
 	<!-- Bottom Navigation - Projects link aligned right -->
-	<div class="w-full flex justify-end mb-2 md:mb-6 px-2 2xl:mb-4">
+	<div class="w-full flex justify-end   px-2 ">
 		<a href={base + "/Projects"} class="text-base md:text-lg accent flex items-center gap-1">
 			See My Projects
 			<i class="fas fa-arrow-right"></i>
@@ -68,20 +62,11 @@
 	</div>
 
 	<!-- More About Me - Properly centered at bottom -->
-	<div class="absolute bottom-2 md:bottom-7 left-1/2 transform -translate-x-1/2 2xl:bottom-4">
+	<div class="absolute bottom-2 left-1/2 transform -translate-x-1/2 ">
 		<a href={base + "/About"} class="text-base md:text-lg accent flex items-center gap-1">
 			<i class="fas fa-arrow-down"></i>
 			More About Me
 		</a>
 	</div>
 
-	<style>
-		.no-scrollbar {
-			-ms-overflow-style: none;
-			scrollbar-width: none;
-		}
-		.no-scrollbar::-webkit-scrollbar {
-			display: none;
-		}
-	</style>
 </div>
